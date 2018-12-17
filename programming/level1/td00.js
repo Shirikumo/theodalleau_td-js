@@ -45,6 +45,17 @@ const dna2 = 'gctttgaagttcggaataggcgcactgttagcagaggctatccacaagcttccaacccgg' +
 'aggcagttcccttttatactaggtaggatggccctatgttcgcagatttcgaacatgact'
 
 function DNAdiff() {
+    //je sais que les deux chaînes font la même longueur
+    var tmp_dn1 = dna1.split('');
+    var tmp_dn2 = dna2.split('');
+    var count = 0;
+    for(var i = 0; i < dna1.length; i++){
+        if(tmp_dn1[i] != tmp_dn2[i]){
+
+            count ++;
+        }
+    }
+    return count;
 }
 
 /* Testing Part */
