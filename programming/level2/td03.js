@@ -9,6 +9,8 @@ passée en paramètre.
 /* TD Part */
 
 function waitThreeSecondsAndReturn42(callback) {
+    setTimeout(function() {
+        callback(42) }, 3000);
 }
 
 /* Testing part */

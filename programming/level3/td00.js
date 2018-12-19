@@ -16,6 +16,17 @@ fib(3) = fib(2) + fib(1)
 /* TD Part */
 
 const fib = (n) => {
+    let array = [];
+    for (let i = 0; i < 14; i++){
+        if (i === 0) {
+            array.push(0);
+        } else if (i === 1) {
+            array.push(1);
+        }
+        array.push((array[n - 1] + array[n - 2]));
+    }
+    console.log(array[n]);
+    return array[n];
 }
 
 /* Testing Part */
