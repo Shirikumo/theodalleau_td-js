@@ -20,7 +20,7 @@ TD02.php // VALIDE
 
 /* TD Part */
 function verify(fileName) {
-    var regex = /editMe/g
+    var regex = /^[Tt][Dd][0-9]{2,2}.(js|php)$/g
     return regex.test(fileName)
 }
 
