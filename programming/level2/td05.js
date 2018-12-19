@@ -7,6 +7,7 @@ Le nombre retourné par la fonction est évidemment choisi aléatoirement.
 */
 
 function rollDice() {
+    return Math.floor(Math.random() * Math.floor(6));
 }
 
 /* Testing Part */
